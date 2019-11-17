@@ -1,0 +1,12 @@
+#!/bin/bash
+# config-changed occurs everytime a new configuration value is updated (juju set)
+
+# Get bind_address + port
+HOST=$(config-get host)
+PORT=$(config-get port)
+
+# set the microsample snap configuration
+snap set microsample host=${HOST} port=${PORT}
+
+# restart service
+systemctl restart snap.microsample.microsample.service

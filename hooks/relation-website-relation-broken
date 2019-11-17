@@ -1,0 +1,2 @@
+#!/bin/bash
+# This hook runs when the full relation is removed (not just a single member)
