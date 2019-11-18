@@ -7,3 +7,11 @@ juju-log Relation settings:
 relation-get
 juju-log Relation members:
 relation-list
+
+
+address=$(unit-get private-address)
+port=$(config-get port)
+
+relation-set hostname=$address
+relation-set port=$port
+# relation-set service_name="microsample_service"

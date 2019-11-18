@@ -6,6 +6,8 @@ set -e
 juju-log $JUJU_REMOTE_UNIT joined
 
 address=$(unit-get private-address)
-port=$(unit-get private-address)
+port=$(config-get port)
 
-relation-set hostname=$address port=$port
+relation-set hostname=$address
+relation-set port=$port
+# relation-set service_name="microsample_service"
