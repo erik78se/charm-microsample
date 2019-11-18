@@ -4,3 +4,15 @@
 # Best practice suggests you execute the hooks/install and
 # hooks/config-changed to ensure all updates are processed
 
+status-set maintenance "Upgrading charm."
+
+./hooks/install
+
+./hooks/config-changed
+
+systemctl restart snap.microsample.microsample.service
+
+# Wait a few sec so to let service start...
+sleep 3
+
+./hooks/update-status

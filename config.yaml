@@ -1,9 +1,5 @@
 options:
-  bind_address:
-    type: string
-    default: "0.0.0.0"
-    description: "Bind address (-h) passed to flask run"
   port:
     type: string
     default: "8080"
-    description: "Listen port (-p) passed to flask run"
+    description: "Listen port (-p) passed to flask run."

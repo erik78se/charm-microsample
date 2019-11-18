@@ -5,4 +5,11 @@
 # failing to account for a debconf question on a dependency, or trying to pull
 # from github without installing git first.
 
-snap install microsample 
+channel=$(config-get channel)
+
+status-set maintenance "installing microsample snap"
+
+snap install microsample --$channel
+
+status-set active
+

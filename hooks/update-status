@@ -1,0 +1,18 @@
+#!/bin/bash
+
+application-version-set $(snap list microsample | tail -1 | awk '{print $2}')
+
+ADDRESS=$(snap get microsample address)
+PORT=$(snap get microsample port)
+
+if [ "$ADDRESS" == "0.0.0.0" ]; then
+  ADDRESS="127.0.0.1"
+fi
+
+status=$(curl --silent ${ADDRESS}:${PORT} 2>&1 /dev/null)
+
+if [ $status == "Online" ]; then
+  status-set active "Service: $status"
+else
+  status-set waiting  "Service not Online."
+fi
