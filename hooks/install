@@ -9,7 +9,7 @@ channel=$(config-get channel)
 
 status-set maintenance "installing microsample snap"
 
-snap install microsample --$channel
+snap install microsample --${channel}
 
 status-set active
 

@@ -3,3 +3,8 @@ options:
     type: string
     default: "8080"
     description: "Listen port (-p) passed to flask run."
+  channel:
+    type: string
+    default: "edge"
+    description: "Channel for microsample snap."
+
