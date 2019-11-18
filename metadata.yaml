@@ -4,12 +4,14 @@ maintainer: Erik Lönroth <erik.lonroth@gmail.com>
 description: |
   Microsample installs the microsample snap, which is a snapped flask microservice.
   
-  It exposes an endpoint at: http://host:8080/api/info
+  It exposes an endpoint at: http://public-ip:8080/api/info
 
-  It also provides the "api" (interface: http) enpoint, which allows you to relate this charm
-  with for example an ssl-termination-proxy or any other charm that implements the interface: http)
+  It also provides the (interface: http) enpoint, which allows you to relate this charm
+  with for example an ssl-termination-proxy, haproxy or any other charm that implements the interface: http)
 tags:
   - misc
+  - development
+  - education
 subordinate: false
 provides:
   website:
