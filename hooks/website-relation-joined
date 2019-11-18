@@ -1,5 +1,11 @@
 #!/bin/bash
+set -e
 # This must be renamed to the name of the relation. The goal here is to
 # affect any change needed by relationships being formed
 # This script should be idempotent.
 juju-log $JUJU_REMOTE_UNIT joined
+
+address=$(unit-get private-address)
+port=$(unit-get private-address)
+
+relation-set hostname=$address port=$port
