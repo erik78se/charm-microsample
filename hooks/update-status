@@ -2,14 +2,10 @@
 
 application-version-set $(snap list microsample | tail -1 | awk '{print $2}')
 
-ADDRESS=$(snap get microsample address)
-PORT=$(snap get microsample port)
-
-# If the listen address is "0.0.0.0" we use 127.0.0.1
-# to query status
-if [ "$ADDRESS" == "0.0.0.0" ]; then
-  ADDRESS="127.0.0.1"
-fi
+# SNAP_ADDRESS=$(snap get microsample address)
+# SNAP_PORT=$(snap get microsample port)
+PORT=$(config-get port)
+ADDRESS=$(unit-get public-address)
 
 status=$(curl --silent ${ADDRESS}:${PORT} 2>&1 /dev/null)
 
