@@ -13,8 +13,8 @@
    viewBox="0 0 100 100"
    version="1.1"
    id="svg18"
-   sodipodi:docname="icon.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   sodipodi:docname="microsample.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata22">
     <rdf:RDF>
@@ -36,18 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1035"
-     inkscape:window-height="757"
+     inkscape:window-width="3370"
+     inkscape:window-height="1376"
      id="namedview20"
      showgrid="false"
      inkscape:pagecheckerboard="true"
-     inkscape:zoom="4.72"
-     inkscape:cx="45.148181"
-     inkscape:cy="48.99602"
-     inkscape:window-x="3578"
-     inkscape:window-y="123"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:zoom="6.675088"
+     inkscape:cx="46.047113"
+     inkscape:cy="38.058369"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18"
+     inkscape:snap-text-baseline="true" />
   <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
   <title
      id="title2">eclispe-che</title>
@@ -64,18 +65,18 @@
      id="layer1"
      inkscape:label="BACKGROUND">
     <g
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-opacity:1"
+       style="fill:#aa8800;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-opacity:1"
        id="Page-1">
       <g
          id="eclispe-che"
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1">
+         style="fill:#aa8800;fill-opacity:1;stroke:none;stroke-opacity:1">
         <g
            id="path3023-path"
-           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1">
+           style="fill:#aa8800;fill-opacity:1;stroke:none;stroke-opacity:1">
           <use
              xlink:href="#path-1"
              id="use9"
-             style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
+             style="fill:#aa8800;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-opacity:1"
              x="0"
              y="0"
              width="100%"
@@ -83,14 +84,62 @@
           <path
              d="M 50.000441,0.5 C 22.662621,0.5 0.5,22.661661 0.5,49.999559 0.5,77.337051 22.663098,99.5 50.000441,99.5 77.337613,99.5 99.5,77.337222 99.5,49.999559 99.5,22.661796 77.337514,0.5 50.000441,0.5 Z"
              id="path11"
-             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1"
+             style="fill:#aa8800;fill-opacity:1;stroke:none;stroke-width:1;stroke-opacity:1"
              inkscape:connector-curvature="0" />
         </g>
       </g>
     </g>
+    <path
+       style="fill:#dde9af;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 13.482968,65.393715 46.740957,0.14981 V 80.075169 H 13.183347 Z"
+       id="path4901"
+       inkscape:connector-curvature="0" />
   </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.66194153px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#501616;fill-opacity:1;stroke:none;stroke-width:1.06655931;"
+     x="13.209297"
+     y="30.886597"
+     id="text97"
+     transform="scale(0.53920723,1.8545746)"
+     inkscape:label="microsample"><tspan
+       sodipodi:role="line"
+       id="tspan4903"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.02940941px;font-family:Chilanka;-inkscape-font-specification:'Chilanka, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.06655931;fill:#501616;"
+       x="13.209297"
+       y="30.886597">microsample</tspan></text>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="PLACE LOGO HERE" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="snap"
+     style="opacity:1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#c87137;fill-opacity:1;stroke:none"
+       x="17.161018"
+       y="78.177963"
+       id="text4827"><tspan
+         sodipodi:role="line"
+         id="tspan4825"
+         x="17.161018"
+         y="78.177963"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.33333397px;font-family:Dyuthi;-inkscape-font-specification:'Dyuthi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#2b0000;fill-opacity:1">SNAP</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.66194153px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#e9ddaf;fill-opacity:1;stroke:none;stroke-width:1.06655931;"
+     x="12.546642"
+     y="30.092352"
+     id="text97-9"
+     transform="scale(0.53920722,1.8545746)"
+     inkscape:label="microsample"><tspan
+       sodipodi:role="line"
+       id="tspan4903-8"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:29.02940941px;font-family:Chilanka;-inkscape-font-specification:'Chilanka, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#e9ddaf;stroke-width:1.06655931;"
+       x="12.546642"
+       y="30.092352">microsample</tspan></text>
 </svg>
