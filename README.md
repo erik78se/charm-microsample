@@ -19,9 +19,8 @@ curl http://microsample-public-ip:8080
 ```
 
 # Usage with an haproxy for availablity/loadbalancing
-A more advanced deployment makes use of [interface:http] of this charm. 
-
-A real world scenario would be a [haproxy] placed in front of two or more units of the microsample service to make it high available. 
+A more advanced deployment makes use of the [interface:http] of this charm.
+By relating the microsample charm with [haproxy] and adding a second unit of microsample, microsample becomes high available.
 
 ![HA Deployment](https://raw.githubusercontent.com/erik78se/charm-microsample/master/microsample-ha.png)
 
@@ -38,6 +37,8 @@ Now, access the service on port 80 as:
 curl http://haproxy-public-ip/api/info
 curl http://haproxy-public-ip
 ```
+
+You can verify the high availability by shuting down one of the units and you should still get a reply. 
 
 # Practice material and tutorials
 
