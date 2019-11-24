@@ -21,7 +21,10 @@ curl http://microsample-public-ip:8080
 # Usage with an haproxy for availablity/loadbalancing
 A more advanced deployment makes use of [interface:http] of this charm. 
 
-A real world scenario would be a [haproxy] placed in front of two or more units of the microsample service to make it high available. This is how you would deploy that.
+A real world scenario would be a [haproxy] placed in front of two or more units of the microsample service to make it high available. 
+
+![HA Deployment](https://raw.githubusercontent.com/erik78se/charm-microsample/master/microsample-ha.png)
+
 
 ```
 juju deploy cs:~erik-lonroth/charm-microsample
