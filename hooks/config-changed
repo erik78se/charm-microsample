@@ -2,7 +2,12 @@
 # config-changed occurs everytime a new configuration value is updated (juju set)
 
 # Get address + port
-ADDRESS=$(unit-get public-address)
+ADDRESS=$(unit-get private-address)
+
+if [ -z "$ADDRESS" ]; then
+  ADDRESS="0.0.0.0"
+fi
+
 PORT=$(config-get port)
 
 # set the microsample snap configuration

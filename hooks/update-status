@@ -5,7 +5,7 @@ application-version-set $(snap list microsample | tail -1 | awk '{print $2}')
 # SNAP_ADDRESS=$(snap get microsample address)
 # SNAP_PORT=$(snap get microsample port)
 PORT=$(config-get port)
-ADDRESS=$(unit-get public-address)
+ADDRESS=$(unit-get private-address)
 
 status=$(curl --silent ${ADDRESS}:${PORT} 2>&1 /dev/null)
 

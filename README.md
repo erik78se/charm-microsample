@@ -11,12 +11,22 @@ This charm is a "hooks only charm" (Learn about it in the [tutorial-a-tiny-hooks
 To deploy this charm its as simple as
 ```
 juju deploy cs:~erik-lonroth/charm-microsample
+juju expose microsample
 ```
 Once the service is "Online", you can test accessing the service on default port 8080.
 ```
 curl http://microsample-public-ip:8080/api/info
 curl http://microsample-public-ip:8080
 ```
+
+## A note on Google Cloud
+There is a bug in juju [https://bugs.launchpad.net/juju/+bug/1761838](1761838) which returns the fan network address for a private address. 
+This breaks the deploy. The workaround for this is to remove the fan networking:
+
+```
+juju model-config fan-config="" container-networking-method=""
+```
+
 
 # Usage with an haproxy for availablity/loadbalancing
 A more advanced deployment makes use of the [interface:http] of this charm.
