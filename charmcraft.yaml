@@ -1,0 +1,22 @@
+type: charm
+
+bases:
+  - build-on:
+    - name: "ubuntu"
+      channel: "20.04"
+    run-on:
+    - name: "ubuntu"
+      channel: "20.04"
+
+parts:
+  microsample:
+    plugin: dump
+    source: .
+    prime:
+      - LICENSE
+      - README.md
+      - config.yaml
+      - copyright
+      - hooks
+      - icon.svg
+      - metadata.yaml
