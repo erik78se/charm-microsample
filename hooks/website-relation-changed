@@ -6,12 +6,27 @@ juju-log $JUJU_REMOTE_UNIT modified its settings
 juju-log Relation settings:
 relation-get
 juju-log Relation members:
-relation-list
+relation-listq
 
 
 address=$(unit-get private-address)
 port=$(config-get port)
+unitid=$(basename $JUJU_UNIT_NAME)
 
 relation-set hostname=$address
+
 relation-set port=$port
-# relation-set service_name="microsample_service"
+
+relation-set "services=
+- { service_name: microsample,
+    service_host: 0.0.0.0,
+    service_port: 8080,
+    service_options: [mode http, balance leastconn, http-check expect rstring ^Online$],
+    servers: [[microsample_unit_${unitid}, $address, $port, check]]}
+- { service_name: letsenrypt_backend,
+    service_host: 0.0.0.0,
+    service_port: 80,
+    service_options: [mode http, balance leastconn],
+    servers: [[letsencrypt, 127.0.0.1, 80, '']]
+  }
+"
