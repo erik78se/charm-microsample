@@ -10,7 +10,7 @@ This charm is a "hooks only charm" (Learn about it in the [tutorial-a-tiny-hooks
 # Stand alone usage
 To deploy this charm its as simple as
 ```
-juju deploy cs:~erik-lonroth/charm-microsample
+juju deploy microsample
 juju expose microsample
 ```
 Once the service is "Online", you can test accessing the service on default port 8080.
@@ -36,7 +36,7 @@ By relating the microsample charm with [haproxy] and adding a second unit of mic
 
 
 ```
-juju deploy cs:~erik-lonroth/charm-microsample
+juju deploy microsample
 juju add-unit microsample
 juju deploy haproxy
 juju relate microsample:website haproxy:reverseproxy
