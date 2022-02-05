@@ -23,10 +23,18 @@ relation-set "services=
     service_port: 8080,
     service_options: [mode http, balance leastconn, http-check expect rstring ^Online$],
     servers: [[microsample_unit_${unitid}, $address, $port, check]]}
-- { service_name: letsenrypt_backend,
-    service_host: 0.0.0.0,
-    service_port: 80,
-    service_options: [mode http, balance leastconn],
-    servers: [[letsencrypt, 127.0.0.1, 80, '']]
-  }
 "
+
+# relation-set "services=
+# - { service_name: microsample,
+#     service_host: 0.0.0.0,
+#     service_port: 8080,
+#     service_options: [mode http, balance leastconn, http-check expect rstring ^Online$],
+#     servers: [[microsample_unit_${unitid}, $address, $port, check]]}
+# - { service_name: letsenrypt_backend,
+#     service_host: 0.0.0.0,
+#     service_port: 80,
+#     service_options: [mode http, balance leastconn],
+#     servers: [[letsencrypt, 127.0.0.1, 80, '']]
+#   }
+# "
