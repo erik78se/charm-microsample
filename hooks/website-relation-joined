@@ -8,6 +8,9 @@ juju-log $JUJU_REMOTE_UNIT joined
 address=$(unit-get private-address)
 port=$(config-get port)
 
+## This is expected by the http interface
 relation-set hostname=$address
 relation-set port=$port
-# relation-set service_name="microsample_service"
+
+## This is specific for haproxy
+relation-set service_name="microsample"

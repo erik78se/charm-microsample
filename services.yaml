@@ -1,0 +1,15 @@
+- service_name: microsample
+  service_host: "0.0.0.0"
+  crts: [DEFAULT]
+  service_port: 443
+  service_options: 
+    - http-request set-header X-Forwarded-Port %[dst_port]
+    - http-request add-header X-Forwarded-Proto https if { ssl_fc }
+    - balance leastconn
+    - option forwardfor
+    - cookie SRVNAME insert
+    - acl url_discovery path /.well-known/caldav /.well-known/carddav
+    - http-request redirect location /remote.php/dav/ code 301 if url_discovery
+  server_options: 
+    - maxconn 100 cookie S{i} check
+
