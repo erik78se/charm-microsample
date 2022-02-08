@@ -72,10 +72,15 @@ curl http://localhost:8080/
 You can even put a haproxy with ssl-termination in front of it by generating a ssl-cert,
 and then do a
 
-    juju config ssl_cert="$(cat server.pem)"
-    juju config ssl_key="$(cat server.key)"
+    juju config haproxy ssl_cert="$(cat server.pem)"
+    juju config haproxy ssl_key="$(cat server.key)"
 
 ... you can tweak haproxy aswell by injecting your own haproxy config as [services.yaml](services.yaml)
+
+    juju config haproxy services="$(cat services.yaml)"
+    
+    curl -k https://<yourhostname>
+    Online
 
 # Contact Information
 Erik Lonroth (erik.lonroth@gmail.com)
