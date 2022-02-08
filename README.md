@@ -21,8 +21,8 @@ curl http://microsample-public-ip:8080
 
 ## A note on Google Cloud
 There is a bug in juju [https://bugs.launchpad.net/juju/+bug/1761838](1761838) which returns the fan network address for a private address. 
-This breaks the deploy. The workaround for this is to remove the fan networking:
-
+This breaks the deploy at least on juju2.8. The workaround for this is to remove the fan networking:
+May have been fixed with juju 2.9
 ```
 juju model-config fan-config="" container-networking-method=""
 ```
@@ -50,6 +50,9 @@ curl http://haproxy-public-ip
 
 You can verify the high availability by shuting down one of the units and you should still get a reply. 
 
+
+
+
 # Practice material and tutorials
 
 Consider [tutorial-a-tiny-hooks-charm] to get the hang of hook-only charms. (Beginner level)
@@ -65,6 +68,14 @@ After its installed, you can access it with:
 ```
 curl http://localhost:8080/
 ```
+
+You can even put a haproxy with ssl-termination in front of it by generating a ssl-cert,
+and then do a
+
+    juju config ssl_cert="$(cat server.pem)"
+    juju config ssl_key="$(cat server.key)"
+
+... you can tweak haproxy aswell by injecting your own haproxy config as [services.yaml](services.yaml)
 
 # Contact Information
 Erik Lonroth (erik.lonroth@gmail.com)

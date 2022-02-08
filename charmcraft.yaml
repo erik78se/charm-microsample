@@ -20,3 +20,4 @@ parts:
       - hooks
       - icon.svg
       - metadata.yaml
+      - services.yaml
