@@ -75,7 +75,7 @@ and then do a
     juju config haproxy ssl_cert="$(base64 server.pem)"
     juju config haproxy ssl_key="$(base64 server.key)"
 
-... you can tweak haproxy aswell by injecting your own haproxy config as [services.yaml](services.yaml)
+... you can tweak haproxy aswell by injecting your own haproxy config as [services.yaml]
 
     juju config haproxy services="$(cat services.yaml)"
     
@@ -92,3 +92,4 @@ Erik Lonroth (erik.lonroth@gmail.com)
 [ssl-termination-proxy]: https://jujucharms.com/ssl-termination-proxy
 [haproxy]: https://jujucharms.com/haproxy/
 [microsample]: https://snapcraft.io/microsample
+[services.yaml]: https://github.com/erik78se/charm-microsample/blob/e1730f9dfc2c48e28a7d424c2161b05ba7b6daee/services.yaml
