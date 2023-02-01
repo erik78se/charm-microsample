@@ -3,9 +3,9 @@ This charm deploys a flask application and provides the [interface:http] for oth
 
 The deployed snap is a flask webservice named [microsample]. Here is the code for it. [microsample-flask-snap]. The webservice is the development flask web-server and is a starting point for more production grade implementations.
 
-The snap runs on any linux distribution, which is one of the advantages with snaps. You could consider placing snaps in your IoT devices and deploy them with juju for automated tests and CI/CD pipelines.
+The snap runs on any linux distribution, which is one of the advantages with snaps. You could consider placing snaps in your edge devices, deploy them with juju for automated CI/CD pipelines.
 
-This charm is a "hooks only charm" (Learn about it in the [tutorial-a-tiny-hooks-charm]). The charm is lightweight in the sense that it doesn't pull in a full python environmet which is the case with reactive based charms.
+This charm is a "hooks only charm" (Learn about it in the [tutorial-a-tiny-hooks-charm]). It is therefore lightweight and deploys super fast.
 
 # Stand alone usage
 To deploy this charm its as simple as
